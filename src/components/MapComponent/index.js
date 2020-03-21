@@ -41,7 +41,7 @@ export default function MapComponent() {
       await sleep(1500);
       try {
         const response = await fetch(
-          `https://firedepartment.azurewebsites.net/corona`
+          `https://masal.azurewebsites.net/getCorona`
         );
         const json = await response.json();
         let fetchedGeoJson = {
