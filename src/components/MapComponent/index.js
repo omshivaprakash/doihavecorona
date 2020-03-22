@@ -40,9 +40,7 @@ export default function MapComponent() {
       });*/
       await sleep(1500);
       try {
-        const response = await fetch(
-          `https://masal.azurewebsites.net/getCorona`
-        );
+        const response = await fetch(`https://masal.herokuapp.com/getCorona`);
         const json = await response.json();
         let fetchedGeoJson = {
           type: "FeatureCollection",
